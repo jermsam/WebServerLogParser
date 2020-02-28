@@ -17,7 +17,8 @@
 	<!-- Enable automatic generation of database schemas directly into the database -->		
 	<!-- Drop and re-create the database schema on startup otherwise use update-->
 	    <property name="hbm2ddl.auto">create</property>
-	<!-- Finally, add the mapping file(s) for persistent classes to the configuration. Hence enabling Hibernate's automatic session context management-->
+	<!-- Finally, add the mapping file(s) for persistent classes to the configuration. 
+	Hence enabling Hibernate's automatic session context management-->
 		<mapping class="com.ef.data.IpAddress" />
 		<mapping class="com.ef.data.StatusComment" />
 	</session-factory>
