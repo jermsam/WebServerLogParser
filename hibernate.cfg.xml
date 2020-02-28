@@ -5,16 +5,19 @@
 
 <hibernate-configuration>
 	<session-factory>
+		<!-- Define your JDBC connection information-->
 	 	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/parser</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">total</property>
+		<!-- specifies the particular SQL variant with which Hibernate will converse. Ie: MySQL-->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
 		<property name="format_sql">false</property>
+	<!-- Enable automatic generation of database schemas directly into the database -->		
 	<!-- Drop and re-create the database schema on startup otherwise use update-->
 	    <property name="hbm2ddl.auto">create</property>
-	<!-- Enable Hibernate's automatic session context management-->
+	<!-- Finally, add the mapping file(s) for persistent classes to the configuration. Hence enabling Hibernate's automatic session context management-->
 		<mapping class="com.ef.data.IpAddress" />
 		<mapping class="com.ef.data.StatusComment" />
 	</session-factory>
