@@ -70,7 +70,7 @@ As you can see  the new recommended code snippet builds the SessionFactory based
 
 8. [LogEntry.java: ] (https://github.com/jermsam/WebServerLogParser/blob/master/LogEntry.java)A blue print for each log
 
-9. [WebLogParse.java:](https://github.com/jermsam/WebServerLogParser/blob/master/WebLogParse.java)Defines a class of Objects that would take in a String of Log information of the form `127.0.0.1|-|waren|[2000-10-21.33:55:36 -0700]|"GET /apache_pb.gif HTTP/1.0"|200|2326` and convert it into [LogEntry Object](https://docs.oracle.com/cd/E29587_01/PlatformServices.60x/ps_log_gen/src/clsrg_about_the_LogEntry_class.html)consisting of `ip`, `date` and `status` key:value pairs. Note that we defined our custom LogEntry in 8 above
+9. [WebLogParse.java:](https://github.com/jermsam/WebServerLogParser/blob/master/WebLogParse.java)Defines a class of Objects that would take in a String of Log information of the form `127.0.0.1|-|waren|[2000-10-21.33:55:36 -0700]|"GET /apache_pb.gif HTTP/1.0"|200|2326` and convert it into [LogEntry Object](https://docs.oracle.com/cd/E29587_01/PlatformServices.60x/ps_log_gen/src/clsrg_about_the_LogEntry_class.html) consisting of `ip`, `date` and `status` key:value pairs. Note that we defined our custom LogEntry in 8 above
 
 ### The Parser App (Actual Business Logic)
 
