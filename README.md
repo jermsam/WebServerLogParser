@@ -17,6 +17,7 @@ This file is where we tell Hibernates how to connect to the database and which J
 
 5. [HibernateUtil.java:](https://github.com/jermsam/WebServerLogParser/blob/master/HibernateUtil.java)The file that defines the Hibernate Session Factory. In Hibernate, you perform database operations via a Session which can be obtained from a SessionFactory. The SessionFactory loads Hibernate configuration file, analyzes the mapping and creates connection to the database. 
 As you can tell; this tool was developed two year ago before. That was before Hibernate v4. If you happen to be reproduce the tool, you will have to redefine your Session Factory as demonstrated in the code below:
+
 ```
 package com.ef.data;
 
@@ -56,7 +57,8 @@ public class HibernateUtil {
 		// Close caches and connection pools
 		getSessionFactory().close();
 	}
-}```
+}
+```
 
 As you can see  the new recommended code snippet builds the SessionFactory based on a ServiceRegistry and obtains the Session.
 
